@@ -1,0 +1,50 @@
+.content {
+  margin-top: 300px;
+}
+
+.d-flex {
+  display: flex;
+}
+
+h1 {
+  font-weight: 800;
+  font-size: 55px;
+}
+
+.img {
+  position: absolute;
+  height: 500px;
+}
+.pos-rel {
+  position: relative;
+}
+.gap {
+  gap: 30px;
+}
+
+.arrow {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 10vw;
+}
+
+p {
+  width: 60%;
+  font-size: 22px;
+}
+
+button {
+    cursor: pointer;
+  font-family: Overpass;
+  border: 3px solid black;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  background-color: transparent;
+  padding: 20px 40px 20px 40px;
+}
+
+.margin{
+    margin-left: 9vw;
+    margin-top: 50px;
+}

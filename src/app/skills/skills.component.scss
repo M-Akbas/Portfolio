@@ -1,0 +1,30 @@
+.box {
+  margin-top: 150px;
+  border: 4px solid black;
+  padding: 140px 0px 100px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+}
+
+.d-flex {
+  display: flex;
+  justify-content: space-around;
+}
+
+h1 {
+  font-size: 55px;
+  font-weight: 800;
+  background-color: #fffcf3;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.mySkills {
+  display: flex;
+  justify-content: center;
+  margin-top: -905px !important;
+}
+.margin-T{
+    margin-top: 50px;
+}

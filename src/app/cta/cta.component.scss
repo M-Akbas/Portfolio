@@ -1,0 +1,45 @@
+.d-flex{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.content{
+    margin-top: 100px;
+}
+
+
+.arrow {
+    height: 65px;
+    position: relative;
+    animation: wobble 2s infinite;
+    cursor: pointer;
+}
+
+.email{
+    margin-top: -5vw;
+    rotate: -90deg;
+    text-decoration: none;
+    color: black;
+
+    &:hover{
+        color: #89AAFC;
+
+    }
+}
+
+.scroll-down{
+    cursor: pointer;
+    animation: wobble 2s ease-in-out;
+    
+}
+
+
+@keyframes wobble {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}

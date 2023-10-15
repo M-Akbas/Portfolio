@@ -1,0 +1,33 @@
+.home-title{
+    margin-top: 200px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+    div{
+        font-weight: 800;
+        font-size: 90px;
+        
+    }
+}
+
+.d-flex{
+    display: flex;
+    align-items: center;
+}
+.gap{
+    gap: 20px;
+}
+
+.name{
+    margin-top: 20px;
+    div{
+        font-size: 32px !important;
+        color: #5988FF;
+        font-family: 'Overpass', sans-serif;
+    }
+    img{
+        height: 3.5px;
+    }
+    
+}

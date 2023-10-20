@@ -24,9 +24,7 @@ img {
 .margin-T {
   margin-top: 250px;
 }
-.abs {
-  position: absolute;
-}
+
 .reverse {
   display: flex;
   flex-direction: row-reverse;
@@ -65,8 +63,14 @@ button {
   font-style: normal;
   font-weight: 400;
   background-color: transparent;
-  padding: 20px 40px 20px 40px;
+  padding: 20px 40px;
+  transition: padding 0.3s ease;
+
+  &:hover {
+    padding: 20px 60px;
+  }
 }
+
 
 .d-flexG {
   display: flex;
@@ -83,3 +87,16 @@ button {
     height: auto !important;
   }
 }
+
+
+.abs {
+  position: absolute;
+  cursor: pointer;
+}
+
+
+
+.d-none {
+  display: none;
+}
+

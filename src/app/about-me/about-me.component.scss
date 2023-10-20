@@ -1,5 +1,6 @@
 .content {
   margin-top: 300px;
+  
 }
 
 .d-flex {
@@ -34,17 +35,22 @@ p {
 }
 
 button {
-    cursor: pointer;
+  cursor: pointer;
   font-family: Overpass;
   border: 3px solid black;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
   background-color: transparent;
-  padding: 20px 40px 20px 40px;
+  padding: 20px 40px;
+  transition: padding 0.3s ease;
+
+  &:hover {
+    padding: 20px 60px;
+  }
 }
 
 .margin{
-    margin-left: 9vw;
+    margin-left: 7vw;
     margin-top: 50px;
 }

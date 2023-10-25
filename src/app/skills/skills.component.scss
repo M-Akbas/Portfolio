@@ -23,9 +23,34 @@ h1 {
 .mySkills {
   display: flex;
   justify-content: center;
-  margin-top: -905px !important;
+  margin-top: -930px !important;
   margin-bottom: 800px;
 }
 .margin-T{
     margin-top: 50px;
 }
+.one-icon{
+  
+  cursor: pointer;
+  
+  div{
+    text-align: center;
+    font-weight: 500;
+  }
+}
+
+.one-icon:hover div{
+    color: #5988ff;
+    
+}
+
+.one-icon svg{
+  transition: transform 0.2s ease-in-out;
+
+  &:hover{
+    transform: translateY(-10px);
+  }
+}
+
+
+

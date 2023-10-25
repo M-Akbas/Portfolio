@@ -1,8 +1,154 @@
-.contact{
-    background-image: url("/assets/covers/footer.png");
-    height: 100vh;
-    
-    background-repeat: no-repeat;
-    
+.contact {
+  background-image: url("/assets/covers/footer.png");
+  height: 100vh;
+  width: 100%;
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
 
+.cta {
+  z-index: 99;
+  padding: 100px 10vw;
+  padding-bottom: 50px;
+
+  h1 {
+    font-weight: 800;
+    font-size: 50px;
+    color: white;
+  }
+}
+
+h2 {
+  font-size: 38px;
+  color: #5988ff;
+}
+
+.fill-info {
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  div {
+    font-size: 28px;
+    color: white;
+  }
+}
+
+.input-fields {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+textarea {
+  height: 100px;
+  min-width: 640px;
+  max-width: 640px;
+  border-left: 3px solid transparent;
+  border-right: 3px solid transparent;
+  border-top: 3px solid transparent;
+  border-bottom: 3px solid white;
+  background: transparent;
+  transition: border 0.3s ease; /* Fügt eine glatte Animation hinzu */
+  padding: 5px;
+  color: white;
+
+  &:hover{
+    border: 3px solid white;
+  }
+}
+.input-fields input {
+  height: 40px;
+  width: 640px;
+  border-left: 3px solid transparent;
+  border-right: 3px solid transparent;
+  border-top: 3px solid transparent;
+  border-bottom: 3px solid white;
+  background: transparent;
+  transition: border 0.3s ease; /* Fügt eine glatte Animation hinzu */
+  padding: 5px;
+  color: white;
+  position: relative;
+}
+
+
+
+.msg {
+  position: relative;
+  height: 100px !important;
+  input {
+    position: absolute;
+    top: 10px;
+  }
+}
+
+.input-fields input:hover {
+  border: 3px solid white; /* Ändert den Rahmen bei Hover */
+}
+
+
+.d-flex{
+  display: flex;
+  align-items: center;
+  
+  gap: 5px;
+}
+.check-box {
+  width: 20px;
+  height: 20px;
+  
+ 
+}
+.privacy{
+  margin-top: 30px;
+  
+
+  
+  div{
+
+    font-size: 18px;
+  }
+}
+
+.privacy-font{
+  font-size: 18px;
+  text-decoration: none;
+  color: #5988ff !important;
+}
+.btn-div{
+  margin-top: 40px;
+
+  button{
+    cursor: pointer;
+    font-family: Overpass;
+    border: 3px solid rgb(255, 255, 255);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    background-color: transparent;
+    padding: 20px 40px;
+    transition: padding 0.5s ease;
+    color: white;
+
+    &:hover{
+      padding: 20px 80px;
+      background-color: #5988ff;
+      color: white;
+      border: 3px solid transparent;
+    }
+  }
+}
+
+
+
+
+
+@media (max-width:1300px) {
+  .contact{
+    background-size: unset;
+  }
+}

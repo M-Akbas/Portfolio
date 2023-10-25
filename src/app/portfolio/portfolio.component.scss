@@ -71,7 +71,6 @@ button {
   }
 }
 
-
 .d-flexG {
   display: flex;
   gap: 10px;
@@ -88,15 +87,92 @@ button {
   }
 }
 
-
 .abs {
+  z-index: 99999;
   position: absolute;
   cursor: pointer;
 }
-
-
 
 .d-none {
   display: none;
 }
 
+.d-block {
+  display: block;
+}
+
+.slide-in {
+  opacity: 1;
+  transform: translateX(0);
+  transition: opacity 0.3s, transform 0.3s;
+}
+
+.infos-left {
+  position: relative;
+  left: -600px;
+  opacity: 0;
+}
+
+.infos-right {
+  position: relative;
+  right: -300px;
+  opacity: 0;
+}
+
+.img-div {
+  z-index: 90;
+  position: relative;
+}
+
+.abs {
+  z-index: 99;
+  position: absolute;
+  top: 0;
+}
+
+.img {
+  filter: grayscale(100%);
+}
+
+.project-div:hover .img {
+  filter: grayscale(0%);
+}
+.project-div .abs {
+  position: absolute; /* Oder "fixed", je nach Bedarf */
+  top: 0; /* Startposition oben */
+  left: 0; /* Startposition links */
+  transition: all 225ms ease-in-out; /* Animationsdauer und Easing-Funktion */
+}
+
+.project-div:hover .abs {
+  top: 25px; /* Endposition unten */
+  left: 25px; /* Endposition rechts */
+}
+
+.project-div .abs-reverse {
+  position: absolute; /* Oder "fixed", je nach Bedarf */
+  top: 0; /* Startposition oben */
+  right: 0; /* Startposition links */
+  transition: all 225ms ease-in-out; /* Animationsdauer und Easing-Funktion */
+}
+
+.project-div:hover .abs-reverse {
+  top: 25px; /* Endposition unten */
+  right: 25px;
+}
+
+.show {
+  transition: all 425ms ease-in-out;
+  position: relative;
+  left: 150px;
+  opacity: 1;
+  z-index: 2;
+}
+
+.show-right {
+  transition: all 425ms ease-in-out;
+  position: relative;
+  right: 260px;
+  opacity: 1;
+  z-index: 2;
+}

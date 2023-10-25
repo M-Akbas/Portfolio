@@ -1,89 +1,90 @@
-<div class="title">
+<div class="title overall-margin">
   <h1>Portfolio</h1>
   <div>
     This page is a sample of my work - please feel free to try them out.
   </div>
 </div>
 
-<div>
-  <div class="d-flex margin-T">
-    <div class="hover"><img src="assets/covers/join.png" alt="" /></div>
-    <div class="d-none">
-      <div class="counter">01/05</div>
+<div class="overall-margin">
+
+  <div class="d-flex margin-T project-div" (mouseenter)="show(1)" (mouseleave)="hide(1)">
+    <div class="img-div">
+      <img class="img" src="assets/covers/join.png" alt="" />
+      <div class="abs"><img src="assets/img/rectA.png" alt="" /></div>
+    </div>
+    <div  class="infos-left" [ngClass]="{'show': showContent[1]}">
+      <div class="counter">01/05</div> 
       <h2>Join</h2>
       <div class="languages">HTML | CSS | JS</div>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
-        placeat molestias minima voluptas totam, quia quod ipsa quas architecto
-        magnam? Cum reprehenderit fugiat tempore atque aliquam repellendus
-        exercitationem placeat ullam?
       </p>
       <div class="d-flexG">
         <button>Live</button>
         <button>GitHub</button>
       </div>
     </div>
-    <div class="abs"><img src="assets/img/rectA.png" alt="" /></div>
+     
   </div>
 
-  <div class="d-flex margin-T reverse">
-    <div class="hover"><img src="assets/covers/Pokedex.png" alt="" /></div>
-    <div class="d-none">
-      <div class="counter-reverse">02/05</div>
+  <div class="d-flex margin-T project-div reverse" (mouseenter)="show(2)" (mouseleave)="hide(2)">
+    <div class="img-div">
+      <img class="img" src="assets/covers/Pokedex.png" alt="" />
+      <div class="abs-reverse"><img src="assets/img/rectA.png" alt="" /></div>
+    </div>
+    <div  class="infos-right" [ngClass]="{'show-right': showContent[2]}">
+      <div class="counter reverse">02/05</div> 
       <h2>Pokédex</h2>
       <div class="languages">HTML | CSS | JS</div>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
-        placeat molestias minima voluptas totam, quia quod ipsa quas architecto
-        magnam? Cum reprehenderit fugiat tempore atque aliquam repellendus
-        exercitationem placeat ullam?
       </p>
       <div class="d-flexG">
         <button>Live</button>
         <button>GitHub</button>
       </div>
     </div>
-    <div class="abs"><img src="assets/img/rectA.png" alt="" /></div>
+     
   </div>
 
-  <div class="d-flex margin-T">
-    <div class="hover"><img src="assets/covers/crm.png" alt="" /></div>
-    <div class="d-none">
-      <div class="counter">03/05</div>
+  <div class="d-flex margin-T project-div" (mouseenter)="show(1)" (mouseleave)="hide(1)">
+    <div class="img-div">
+      <img class="img" src="assets/covers/crm.png" alt="" />
+      <div class="abs"><img src="assets/img/rectA.png" alt="" /></div>
+    </div>
+    <div  class="infos-left" [ngClass]="{'show': showContent[1]}">
+      <div class="counter">03/05</div> 
       <h2>Simple CRM</h2>
       <div class="languages">HTML | CSS | JS</div>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
-        placeat molestias minima voluptas totam, quia quod ipsa quas architecto
-        magnam? Cum reprehenderit fugiat tempore atque aliquam repellendus
-        exercitationem placeat ullam?
       </p>
       <div class="d-flexG">
         <button>Live</button>
         <button>GitHub</button>
       </div>
     </div>
-    <div class="abs"><img src="assets/img/rectA.png" alt="" /></div>
+     
   </div>
 
-  <div class="d-flex margin-T reverse">
-    <div class="hover"><img src="assets/covers/samurai.png" alt="" /></div>
-    <div class="d-none">
-      <div class="counter-reverse">04/05</div>
-      <h2>The Last Samurai</h2>
+  <div class="d-flex margin-T project-div reverse" (mouseenter)="show(2)" (mouseleave)="hide(2)">
+    <div class="img-div">
+      <img class="img" src="assets/covers/samurai.png" alt="" />
+      <div class="abs-reverse"><img src="assets/img/rectA.png" alt="" /></div>
+    </div>
+    <div  class="infos-right" [ngClass]="{'show-right': showContent[2]}">
+      <div class="counter reverse">04/05</div> 
+      <h2>Takeshi Ishiro</h2>
       <div class="languages">HTML | CSS | JS</div>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
-        placeat molestias minima voluptas totam, quia quod ipsa quas architecto
-        magnam? Cum reprehenderit fugiat tempore atque aliquam repellendus
-        exercitationem placeat ullam?
       </p>
       <div class="d-flexG">
         <button>Live</button>
         <button>GitHub</button>
       </div>
     </div>
-    <div class="abs"><img src="assets/img/rectA.png" alt="" /></div>
+     
   </div>
 </div>
 <div class="arrow"><img src="assets/icons/arrowLeft.png" alt="" /></div>

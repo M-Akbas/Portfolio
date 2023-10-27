@@ -1,5 +1,7 @@
 .content {
   margin-top: 300px;
+  display: flex;
+  align-items: center;
 }
 
 .content .border {
@@ -44,6 +46,7 @@ h1 {
   display: flex;
   justify-content: flex-end;
   margin-right: 10vw;
+  margin-bottom: 100px;
 }
 
 p {
@@ -70,4 +73,20 @@ button {
 .margin {
   margin-left: 7vw;
   margin-top: 50px;
+}
+
+
+@media (max-width:1250px) {
+  .content{
+    flex-direction: column-reverse;
+  }
+  .margin{
+    margin-left: unset;
+  }
+  .center-repsonsive{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+  }
 }

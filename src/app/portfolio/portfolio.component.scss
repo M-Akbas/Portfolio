@@ -20,6 +20,7 @@ img {
 .d-flex {
   display: flex;
   gap: 120px;
+  align-items: center;
 }
 .margin-T {
   margin-top: 250px;
@@ -172,7 +173,79 @@ button {
 .show-right {
   transition: all 425ms ease-in-out;
   position: relative;
-  right: 260px;
+  right: 300px;
   opacity: 1;
   z-index: 2;
+}
+
+@media (max-width: 1440px) {
+  .show {
+    left: 10px;
+  }
+  .show-right {
+    
+    right: 10px;
+    
+  }
+  
+
+}
+@media (max-width: 1800px) {
+  .d-flex{
+    gap: 0px;
+  }
+  
+
+}
+
+@media (max-width: 1650px) {
+  .show {
+    left: 200px;
+  }
+  .show-right {
+    
+    right: 200px;
+    
+  }
+  
+
+}
+@media (max-width: 1550px) {
+  .d-flex{
+  display: flex;
+  gap: 40px;
+  
+  flex-direction: column;
+  justify-content: center;
+  }
+
+  .show {
+   left: 0;
+  }
+  .show-right{
+    right: 0;
+  }
+  .counter{
+    display: none;
+  }
+  .show {
+    left: -80px;
+   }
+   .show-right{
+    right: 95px;
+  }
+}
+  
+
+
+
+@media (max-width: 1250px) {
+  .d-flex {
+    flex-direction: column;
+    align-items: center;
+   
+  }
+  
+ 
+  
 }

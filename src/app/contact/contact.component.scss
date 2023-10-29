@@ -1,9 +1,9 @@
 .contact {
   background-image: url("/assets/covers/footer.png");
-  height: 100vh;
   width: 100%;
-  background-size: 100%;
+  background-size: cover;
   background-repeat: no-repeat;
+  padding-bottom: 100px;
 }
 
 .cta {
@@ -150,5 +150,69 @@ textarea {
 @media (max-width:1300px) {
   .contact{
     background-size: unset;
+  }
+}
+
+
+
+@media (max-width:750px) {
+  .cta h1{
+    font-size: 38px;
+  }
+  .fill-info h2 {
+    font-size: 28px;
+  }
+  .fill-info div {
+    font-size: 18px;
+  }
+  .input-fields input {
+    width: 420px;
+  }
+  textarea {
+    min-width: 420px;
+    max-width: 420px;
+  }
+  .privacy div  {
+    font-size: 12px;
+  }
+  .privacy a{
+    font-size: 12px;
+  }
+}
+
+@media (max-width:450px) {
+  .cta h1{
+    font-size: 32px;
+  }
+  .fill-info h2 {
+    font-size: 22px;
+  }
+  .fill-info div {
+    font-size: 14px;
+  }
+  .input-fields input {
+    width: 300px;
+  }
+  textarea {
+    min-width: 300px;
+    max-width: 300px;
+  }
+  .privacy div  {
+    font-size: 12px;
+    
+  }
+  .privacy a{
+    font-size: 12px;
+  }
+  .d-flex{
+    flex-wrap: wrap;
+    margin-left: 
+    20vw;
+    margin-right: 20vw;
+  }
+
+  button{
+    font-size: 16px !important;
+    padding: 18px 35px !important;
   }
 }

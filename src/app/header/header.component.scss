@@ -12,3 +12,22 @@ header{
 img{
     height: 28px;
 }
+
+@media (max-width:750px) {
+    .logo{
+        font-size: 26px;
+    }
+    img{
+        height: 24px;
+    }
+}
+
+
+@media (max-width:450px) {
+    .logo{
+        font-size: 22px;
+    }
+    img{
+        height: 22px;
+    }
+}

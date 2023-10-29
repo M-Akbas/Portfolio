@@ -43,3 +43,29 @@
         transform: translateY(-20px);
     }
 }
+
+@media (max-width: 750px) {
+    .email{
+        font-size: 15px;
+    }
+    .scroll-down{
+        font-size: 15px;
+    }
+    .arrow{
+        height: 54px;
+    }
+  }
+
+
+  @media (max-width: 525px) {
+    .email{
+        font-size: 12px;
+    }
+    .scroll-down{
+        font-size: 12px;
+    }
+    .arrow{
+        height: 50px;
+    }
+  }
+

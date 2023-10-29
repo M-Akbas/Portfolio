@@ -23,7 +23,7 @@ img {
   align-items: center;
 }
 .margin-T {
-  margin-top: 250px;
+  margin-top: 150px;
 }
 
 .reverse {
@@ -214,11 +214,19 @@ button {
   .d-flex{
   display: flex;
   gap: 40px;
-  
+  align-items: center !important;
   flex-direction: column;
   justify-content: center;
   }
+  .infos-left{
+    position: unset;
+    margin-right: 100px;
+  }
 
+  .infos-right{
+    position: unset;
+    margin-right: 100px;
+  }
   .show {
    left: 0;
   }
@@ -248,4 +256,71 @@ button {
   
  
   
+}
+
+
+@media (max-width: 750px) {
+ 
+  img{
+    height: 350px;
+  }
+  h2{
+    font-size: 32px;
+  }
+  .languages{
+    font-size: 20px;
+  }
+  h1{
+    font-size: 38px;
+  }
+  .title div {
+    font-size: 18px;
+  }
+}
+
+@media (max-width:525px) {
+  img {
+    height: 250px;
+  }
+  .infos-left{
+    margin-left: 80px;
+  }
+  .infos-right{
+    margin-left: 80px;
+  }
+  .arrow img{
+    height: 120px !important;
+  }
+}
+
+@media (max-width:450px) {
+  
+  h1{
+    font-size: 32px;
+  }
+  img {
+    height: 180px;
+  }
+  .title div {
+    font-size: 16px;
+  }
+  .infos-left{
+    margin-left: 80px;
+  }
+  .infos-right{
+    margin-left: 80px;
+  }
+  .arrow img{
+    height: 120px !important;
+  }
+  h2{
+    font-size: 30px;
+  }
+  .languages{
+    font-size: 16px;
+  }
+  button{
+    padding: 18px 34px;
+    font-size: 16px;
+  }
 }

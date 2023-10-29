@@ -18,6 +18,10 @@ h1 {
   background-color: #fffcf3;
   padding-left: 50px;
   padding-right: 50px;
+  &:hover{
+    color: #5988ff;
+    cursor: pointer;
+  }
 }
 
 .mySkills {
@@ -49,4 +53,68 @@ margin-bottom: -100px;
   &:hover {
     transform: translateY(-10px);
   }
+}
+
+@media (max-width:750px) {
+  .box{
+    padding: 110px 50px 80px 50px;
+  }
+  .margin-T img {
+    height: 170px;
+    margin-left: 15px;
+  }
+  h1{
+    font-size: 48px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .mySkills{
+    margin-bottom: -90px;
+  }
+}
+
+@media (max-width:525px) {
+  h1{
+    font-size: 38px;
+  }
+
+  .mySkills{
+    margin-bottom: -80px;
+  }
+  .one-icon svg {
+    height: 65px;
+  }
+  .icons-div{
+    gap: 80px;
+  }
+  .margin-T img {
+    height: 120px;
+    
+  }
+  
+}
+
+@media (max-width:450px) {
+  h1{
+    font-size: 32px;
+  }
+
+  .mySkills{
+    margin-bottom: -70px;
+  }
+  .one-icon svg {
+    height: 55px;
+  }
+
+  .one-icon div {
+    font-size: 14px;
+  }
+  .icons-div{
+    gap: 80px;
+  }
+  .margin-T img {
+    height: 120px;
+    
+  }
+  
 }

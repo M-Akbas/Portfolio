@@ -30,20 +30,78 @@
   }
 }
 @media (max-width: 1250px) {
-    .home-title{
-        div{
-            font-size: 70px;
-        }
+  .home-title {
+    div {
+      font-size: 70px;
     }
-    .name {
-  margin-top: 20px;
-  div {
-    font-size: 22px !important;
-    color: #5988ff;
-    font-family: "Overpass", sans-serif;
   }
-  img {
-    height: 2.5px;
+  .name {
+    margin-top: 20px;
+    div {
+      font-size: 22px !important;
+      color: #5988ff;
+      font-family: "Overpass", sans-serif;
+    }
+    img {
+      height: 2.5px;
+    }
   }
 }
+
+@media (max-width: 750px) {
+  .home-title {
+    div {
+      font-size: 54px;
+    }
+  }
+  .name {
+    margin-top: 20px;
+    div {
+      font-size: 22px !important;
+      color: #5988ff;
+      font-family: "Overpass", sans-serif;
+    }
+    img {
+      height: 2px;
+    }
+  }
+}
+
+@media (max-width:525px) {
+  .home-title {
+    div {
+      font-size: 48px;
+    }
+  }
+  .name {
+    margin-top: 20px;
+    div {
+      font-size: 20px !important;
+      color: #5988ff;
+      font-family: "Overpass", sans-serif;
+    }
+    img {
+      height: 2px;
+      width: 200px;
+    }
+  }
+}
+@media (max-width:450px) {
+  .home-title {
+    div {
+      font-size: 38px;
+    }
+  }
+  .name {
+    margin-top: 20px;
+    div {
+      font-size: 16px !important;
+      color: #5988ff;
+      font-family: "Overpass", sans-serif;
+    }
+    img {
+      height: 1.7px;
+      width: 170px;
+    }
+  }
 }

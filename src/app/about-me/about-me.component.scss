@@ -90,3 +90,62 @@ button {
     margin-top: 50px;
   }
 }
+
+@media (max-width: 750px) {
+  .arrow img { 
+    height: 170px;
+  }
+  h1{
+    font-size: 50px;
+  }
+  p{
+    width: 75%;
+    font-size: 18px;
+    text-align: start;
+    word-break: break-word;
+  }
+}
+
+@media (max-width:525px) {
+  .img{
+    height: 300px;
+  }
+  .border{
+    height: 300px;
+  }
+  h1{
+    font-size: 38px;
+  }
+  p{
+    font-size: 16px;
+  }
+  .arrow img {
+    height: 120px;
+  }
+  button{
+    padding: 20px 30px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width:450px) {
+  .img{
+    height: 260px;
+  }
+  .border{
+    height: 260px;
+  }
+  h1{
+    font-size: 32px;
+  }
+  p{
+    font-size: 16px;
+  }
+  .arrow img {
+    height: 120px;
+  }
+  button{
+    padding: 20px 30px;
+    font-size: 16px;
+  }
+}

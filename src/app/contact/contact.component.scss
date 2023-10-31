@@ -1,11 +1,15 @@
 .contact {
-  background-image: url("/assets/covers/footer.png");
+  background-image: url("/assets/covers/footer.png"); 
   width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
   padding-bottom: 100px;
 }
-
+.alert{
+  color: rgba(214, 29, 29, 0.737) !important;
+  font-size: 15px !important;
+  
+}
 .cta {
   z-index: 99;
   padding: 100px 10vw;
@@ -17,7 +21,20 @@
     color: white;
   }
 }
+.alerty{
+  color: rgba(214, 29, 29, 0.737) !important;
+  font-size: 15px !important;
+  
+}
+.parent{
+  position: relative;
+}
+.child{
+  position: absolute !important;
+  left: 0px;
+  top: 67px;
 
+}
 h2 {
   font-size: 38px;
   color: #5988ff;
@@ -41,7 +58,7 @@ h2 {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   gap: 30px;
 }
 textarea {
@@ -120,7 +137,7 @@ textarea {
   color: #5988ff !important;
 }
 .btn-div{
-  margin-top: 40px;
+  margin-top: 70px;
 
   button{
     cursor: pointer;

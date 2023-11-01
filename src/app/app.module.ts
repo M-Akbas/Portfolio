@@ -12,6 +12,7 @@ import { SkillsComponent } from './skills/skills.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { ContactComponent } from './contact/contact.component';
 import { EmailSendComponent } from './email-send/email-send.component';
+import { MainComponent } from './main/main.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { EmailSendComponent } from './email-send/email-send.component';
     SkillsComponent,
     PortfolioComponent,
     ContactComponent,
-    EmailSendComponent
+    EmailSendComponent,
+    MainComponent
   ],
   imports: [
     BrowserModule,

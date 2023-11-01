@@ -7,10 +7,12 @@ header{
 .logo{
     font-size: 32px;
     font-weight: 800;
+    cursor: pointer;
 }
 
 img{
     height: 28px;
+    cursor: pointer;
 }
 
 @media (max-width:750px) {

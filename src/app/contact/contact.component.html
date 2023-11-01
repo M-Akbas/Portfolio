@@ -19,7 +19,10 @@
         type="text"
         name="name"
       />
-      <div class="alert" *ngIf="submitted && form.get('name').hasError('required')">
+      <div
+        class="alert"
+        *ngIf="submitted && form.get('name').hasError('required')"
+      >
         Name is required
       </div>
       <input
@@ -28,10 +31,16 @@
         type="email"
         name="email"
       />
-      <div class="alert" *ngIf="submitted && form.get('email').hasError('required')">
+      <div
+        class="alert"
+        *ngIf="submitted && form.get('email').hasError('required')"
+      >
         Email is required
       </div>
-      <div class="alert" *ngIf="submitted && form.get('email').hasError('email')">
+      <div
+        class="alert"
+        *ngIf="submitted && form.get('email').hasError('email')"
+      >
         Invalid email format
       </div>
       <textarea
@@ -42,36 +51,48 @@
         cols="30"
         rows="10"
       ></textarea>
-      <div class="alert" *ngIf="submitted && form.get('message').hasError('required')">
+      <div
+        class="alert"
+        *ngIf="submitted && form.get('message').hasError('required')"
+      >
         Message is required
       </div>
     </div>
 
     <!-- Display validation error messages -->
     <div class="parent">
-    <div class="d-flex privacy">
-      <input
-        class="check-box"
-        type="checkbox"
-        formControlName="privacy"
-        id=""
-        name=""
-        value="false"
-      />
-      <div>I've read the</div>
-      <a routerLink="/home" class="privacy-font">privacy policy</a>
-      <div>and agree to the processing of my data as outlined.</div>
-      
+      <div class="d-flex privacy">
+        <input
+          class="check-box"
+          type="checkbox"
+          formControlName="privacy"
+          id=""
+          name=""
+          value="false"
+        />
+        <div>I've read the</div>
+        <a routerLink="/home" class="privacy-font">privacy policy</a>
+        <div>and agree to the processing of my data as outlined.</div>
+      </div>
+      <div
+        class="alert child"
+        *ngIf="submitted && form.get('privacy').value === false"
+      >
+        Privacy consent is required
+      </div>
     </div>
-    <div class="alert child" *ngIf=" submitted && form.get('privacy').value === false">
-      Privacy consent is required
-    </div>
-    
-  </div>
-    
 
-    <div class="btn-div">
-      <button type="submit">Send message</button>
+    <div class="pos-rel"> 
+
+      <div class="btn-div">
+        <button type="submit">Send message</button>
+      </div>
+
+      <div class="notification">
+        <h4>Message Sent!</h4>
+        <p>Thank you for getting in touch. We'll be in contact shortly</p>
+      </div>
+      
     </div>
   </form>
 </div>

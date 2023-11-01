@@ -1,19 +1,18 @@
 .contact {
-  background-image: url("/assets/covers/footer.png"); 
+  background-image: url("/assets/covers/footer.png");
   width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
   padding-bottom: 100px;
 }
-.alert{
+.alert {
   color: rgba(214, 29, 29, 0.737) !important;
   font-size: 15px !important;
-  
 }
 .cta {
   z-index: 99;
   padding: 100px 10vw;
-  padding-bottom: 50px;
+  padding-bottom: 50px; 
 
   h1 {
     font-weight: 800;
@@ -21,19 +20,45 @@
     color: white;
   }
 }
-.alerty{
+.alerty {
   color: rgba(214, 29, 29, 0.737) !important;
   font-size: 15px !important;
-  
 }
-.parent{
+.pos-rel {
   position: relative;
 }
-.child{
+
+.notification {
+  opacity: 0;
+  transition: 325ms ease-out;
+  position: absolute;
+  left: -120px;
+  bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #5988ff;
+  padding: 10px 30px;
+  border-radius: 30px;
+  width: 400px;
+  h4 {
+    margin-bottom: 5px;
+    margin-top: 15px;
+    font-size: 22px;
+    width: 200px;
+  }
+  p {
+    font-size: 16px;
+  }
+}
+.parent {
+  position: relative;
+}
+.child {
   position: absolute !important;
   left: 0px;
   top: 67px;
-
 }
 h2 {
   font-size: 38px;
@@ -41,7 +66,6 @@ h2 {
 }
 
 .fill-info {
-  
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -74,7 +98,7 @@ textarea {
   padding: 5px;
   color: white;
 
-  &:hover{
+  &:hover {
     border: 3px solid white;
   }
 }
@@ -92,8 +116,6 @@ textarea {
   position: relative;
 }
 
-
-
 .msg {
   position: relative;
   height: 100px !important;
@@ -107,39 +129,33 @@ textarea {
   border: 3px solid white; /* Ändert den Rahmen bei Hover */
 }
 
-
-.d-flex{
+.d-flex {
   display: flex;
   align-items: center;
-  
+
   gap: 5px;
 }
 .check-box {
   width: 20px;
   height: 20px;
-  
- 
 }
-.privacy{
+.privacy {
   margin-top: 30px;
-  
 
-  
-  div{
-
+  div {
     font-size: 18px;
   }
 }
 
-.privacy-font{
+.privacy-font {
   font-size: 18px;
   text-decoration: none;
   color: #5988ff !important;
 }
-.btn-div{
+.btn-div {
   margin-top: 70px;
 
-  button{
+  button {
     cursor: pointer;
     font-family: Overpass;
     border: 3px solid rgb(255, 255, 255);
@@ -151,8 +167,7 @@ textarea {
     transition: padding 0.5s ease;
     color: white;
 
-    &:hover{
-      padding: 20px 80px;
+    &:hover {
       background-color: #5988ff;
       color: white;
       border: 3px solid transparent;
@@ -160,20 +175,14 @@ textarea {
   }
 }
 
-
-
-
-
-@media (max-width:1300px) {
-  .contact{
-    background-size: unset;
+@media (max-width: 1300px) {
+  .contact {
+    background-size: cover 100%;
   }
 }
 
-
-
-@media (max-width:750px) {
-  .cta h1{
+@media (max-width: 750px) {
+  .cta h1 {
     font-size: 38px;
   }
   .fill-info h2 {
@@ -189,16 +198,16 @@ textarea {
     min-width: 420px;
     max-width: 420px;
   }
-  .privacy div  {
+  .privacy div {
     font-size: 12px;
   }
-  .privacy a{
+  .privacy a {
     font-size: 12px;
   }
 }
 
-@media (max-width:450px) {
-  .cta h1{
+@media (max-width: 450px) {
+  .cta h1 {
     font-size: 32px;
   }
   .fill-info h2 {
@@ -214,22 +223,29 @@ textarea {
     min-width: 300px;
     max-width: 300px;
   }
-  .privacy div  {
-    font-size: 12px;
-    
-  }
-  .privacy a{
+  .privacy div {
     font-size: 12px;
   }
-  .d-flex{
+  .privacy a {
+    font-size: 12px;
+  }
+  .d-flex {
     flex-wrap: wrap;
-    margin-left: 
-    20vw;
+    margin-left: 20vw;
     margin-right: 20vw;
   }
 
-  button{
+  button {
     font-size: 16px !important;
     padding: 18px 35px !important;
+  }
+}
+
+
+@media (max-width: 450px) {
+  .child {
+    position: absolute !important;
+    left: 39px !important;
+    top: 107px;
   }
 }

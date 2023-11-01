@@ -1,4 +1,6 @@
 import { Component, AfterViewInit } from '@angular/core';
+import { SharedService } from '../shared.service';
+import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-main',
@@ -7,21 +9,31 @@ import { Component, AfterViewInit } from '@angular/core';
 })
 export class MainComponent implements AfterViewInit{
   isVisible: boolean = true;
+  clickEventSubscription: Subscription;
 
-  constructor() {
+  constructor(private SharedService:SharedService) {
+    this.clickEventSubscription = this.SharedService.getEvent().subscribe(() =>{
+      this.mainPageToggle();
+    });
+  }
+
+
+  ngAfterViewInit(){
     
   }
-  ngAfterViewInit(){
-    this.mainPageToggle();
-  }
+
+
   mainPageToggle() {
     const mainPage = document.querySelector(".main") as HTMLElement;
-
-    if (!this.isVisible) {
+    
+    if (this.isVisible) {
       mainPage.style.display = "none";
+      this.isVisible = false;
     } else {
       mainPage.style.display = "block";
+      this.isVisible = true;
     }
+    
   }
 }
 

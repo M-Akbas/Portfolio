@@ -3,19 +3,32 @@
     <div class="logo">[MA]</div>
   </div>
   <div (click)="menu()">
-    <img @eatYourself @showYourself *ngIf="visible" class="menu-tab" src="assets/icons/menu.png" alt="" />
-    <img @eatYourself @showYourself *ngIf="!visible" class="menu-close" src="assets/iconAll/close.png" alt="" />
+    <img
+      @eatYourself
+      @showYourself
+      *ngIf="visible"
+      class="menu-tab"
+      src="assets/icons/menu.png"
+      alt=""
+    />
+    <img
+      @eatYourself
+      @showYourself
+      *ngIf="!visible"
+      class="menu-close"
+      src="assets/iconAll/close.png"
+      alt=""
+    />
   </div>
 </header>
 
 <div id="menu">
-
-  <div @fadeIn  *ngIf="!visible" id="links">
-    <a href="">About Me</a>
-    <a href="">My Skills</a>
-    <a href="">Portfolio</a>
+  <div @fadeIn *ngIf="!visible" id="links">
+    <a (click)="scrollToSection('aboutMe')">About Me</a>
+    <a (click)="scrollToSection('mySkills')">My Skills</a>
+    <a (click)="scrollToSection('portfolio')">Portfolio</a>
   </div>
-  
+
   <div @up *ngIf="!visible" class="footer">
     <div class="space-between">
       <div class="d-flex column">

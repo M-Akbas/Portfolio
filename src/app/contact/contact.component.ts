@@ -27,7 +27,7 @@ export class ContactComponent {
   }
 
   sendMail(event: any) {
-    if (this.form.valid === false) {
+    if (!this.form.valid) {
       this.submitted = true;
     } else {
 
@@ -48,6 +48,8 @@ export class ContactComponent {
       }).catch((error) => {
         console.log(error);
       });
+
+      this.submitted = false;
     }
 
 

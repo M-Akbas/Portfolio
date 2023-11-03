@@ -7,33 +7,31 @@ import { Subscription } from 'rxjs';
   templateUrl: './main.component.html',
   styleUrls: ['./main.component.scss']
 })
-export class MainComponent implements AfterViewInit{
+export class MainComponent implements AfterViewInit {
   isVisible: boolean = true;
   clickEventSubscription: Subscription;
+  mainPage: HTMLElement; // Deklaration des HTML Element
 
-  constructor(private SharedService:SharedService) {
-    this.clickEventSubscription = this.SharedService.getEvent().subscribe(() =>{
+  constructor(private sharedService: SharedService) {
+    this.clickEventSubscription = this.sharedService.getEvent().subscribe(() => {
       this.mainPageToggle();
     });
   }
 
-
-  ngAfterViewInit(){
-    
+  ngAfterViewInit() {
+    // auf die klasse von HTML zugreifen
+    this.mainPage = document.querySelector(".main") as HTMLElement;
   }
-
 
   mainPageToggle() {
-    const mainPage = document.querySelector(".main") as HTMLElement;
-    
     if (this.isVisible) {
-      mainPage.style.display = "none";
+      this.mainPage.style.display = "none";
       this.isVisible = false;
     } else {
-      mainPage.style.display = "block";
+      this.mainPage.style.display = "block";
       this.isVisible = true;
     }
-    
   }
 }
+
 

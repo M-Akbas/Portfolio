@@ -59,9 +59,10 @@ export class ContactComponent {
  animation(){
   const notificationElement = document.querySelector(".notification") as HTMLElement; 
   notificationElement.style.opacity = "1";
-  notificationElement.style.bottom = "350px";
+  notificationElement.style.zIndex = "unset";
   setTimeout(()=>{
     notificationElement.style.opacity = "0";
+    notificationElement.style.zIndex = "-10";
   }, 2000);
  }
 

@@ -1,5 +1,5 @@
 .contact {
-  background-image: url("/../assets/covers/footer.png");
+  background-image: url("/assets/covers/footer.png");
   width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -32,16 +32,19 @@
   opacity: 0;
   transition: 325ms ease-out;
   position: absolute;
-  left: -120px;
-  bottom: 50px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  z-index: -10;
+  bottom: 150%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   background-color: #5988ff;
-  padding: 10px 30px;
-  border-radius: 30px;
-  width: 400px;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  
   h4 {
     margin-bottom: 5px;
     margin-top: 15px;
@@ -168,9 +171,9 @@ textarea {
     color: white;
 
     &:hover {
-      background-color: #5988ff;
+      padding: 20px 45px;
       color: white;
-      border: 3px solid transparent;
+      
     }
   }
 }

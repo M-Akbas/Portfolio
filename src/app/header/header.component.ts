@@ -42,7 +42,7 @@ import {
       
       transition(':enter', [
         style({ opacity: 1, transform: 'translateY(200%)',  }), // Startzustand
-        animate('225ms ease-in-out', style({ opacity: 1  , transform: 'translateY(0%)'})) // Endzustand
+        animate('625ms ease-in-out', style({ opacity: 1  , transform: 'translateY(0%)'})) // Endzustand
       ]),
     ]),
   ]

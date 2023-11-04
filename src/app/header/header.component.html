@@ -24,16 +24,16 @@
 
 <div id="menu">
   <div @fadeIn *ngIf="!visible" id="links">
-    <a (click)="scrollToSection('aboutMe')">About Me</a>
-    <a (click)="scrollToSection('mySkills')">My Skills</a>
-    <a (click)="scrollToSection('portfolio')">Portfolio</a>
+    <a href="">About Me</a>
+    <a href="">My Skills</a>
+    <a href="">Portfolio</a>
   </div>
 
   <div @up *ngIf="!visible" class="footer">
     <div class="space-between">
       <div class="d-flex column">
         <h1>Say Hi !</h1>
-        <div class="d-flex center">
+        <div class="d-flex center copy">
           <div class="email">muhammed@gmail.com</div>
           <img src="assets/iconAll/svg.png" alt="" />
         </div>

@@ -14,74 +14,36 @@ import {
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss'],
   animations: [
-    trigger('fadeIn', [
-      transition(':enter', [
-        style({ opacity: 1 , transform: 'translateX(-200%)'}),
-        animate('425ms ease-in-out', style({ opacity: 1 ,transform: 'translateX(0%)' }))
-      ]),
-      transition(':leave', [
-        style({ opacity: 1, transform: 'translateX(0%)'}),
-        animate('425ms ease-in-out', style({ opacity: 1 , transform: 'translateX(-200%)'}))
-      ]),
+    trigger("eat", [
+      transition(":enter", [
+        style({ opacity: 1}),
+        animate('225ms', style({ opacity: 1 , transform: 'rotate(180deg)'}))
+      ])
     ]),
-    trigger('eatYourself', [
-      
-      transition(':leave', [
-        style({ opacity: 0, transform: 'scale(1)',  }), // Startzustand
-        animate('225ms ease-in-out', style({ opacity: 1, transform: 'scale(0.2)' , rotate: '180deg'})) // Endzustand
-      ]),
+    trigger("eat", [
+      transition(":leave", [
+        style({ opacity: 1 }),
+        animate('225ms', style({ opacity: 1 }))
+      ])
     ]),
-    trigger('showYourself', [
-      
-      transition(':enter', [
-        style({ opacity: 0, transform: 'scale(0.2)' }), // Startzustand
-        animate('225ms ease-in-out', style({ opacity: 1, transform: 'scale(1)' })) // Endzustand
-      ]),
-    ]),
-    trigger('up', [
-      
-      transition(':enter', [
-        style({ opacity: 1, transform: 'translateY(200%)',  }), // Startzustand
-        animate('625ms ease-in-out', style({ opacity: 1  , transform: 'translateY(0%)'})) // Endzustand
-      ]),
-    ]),
+    
   ]
 })
 
 export class HeaderComponent {
+  closeIcon: boolean = true;
+  menuIcon: boolean = true;
+  constructor(private sharedService: SharedService) { }
 
-  public event: boolean;
-  visible:boolean = true;
 
-  menuStyleFlex = false;
-
-  constructor(private SharedService: SharedService) {
-    this.event = false;
-
-  }
-
-  scrollToSection(sectionId: string) {
-    const element = document.getElementById(sectionId) as HTMLElement;
-
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
-    
-  }
 
   menu() {
-    let menu = document.getElementById("menu") as HTMLDivElement;
-    console.log(this.event);
-    this.SharedService.sendClickEvent();
-    if (!this.menuStyleFlex) {
-      menu.style.display = "flex";
-      this.menuStyleFlex = true;
-      this.visible = false;
+    this.sharedService.sendClickEvent();
+    this.toggleIcons()
+  }
 
-    } else {
-      menu.style.display = "none"
-      this.menuStyleFlex = false;
-      this.visible = true;
-    }
+  toggleIcons() {
+    this.closeIcon = !this.closeIcon;
+    this.menuIcon = !this.menuIcon;
   }
 }

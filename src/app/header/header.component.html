@@ -3,18 +3,12 @@
     <div class="logo">[MA]</div>
   </div>
   <div (click)="menu()">
-    <img
-      @eatYourself
-      @showYourself
-      *ngIf="visible"
+    <img  *ngIf="menuIcon"
       class="menu-tab"
       src="assets/icons/menu.png"
       alt=""
     />
-    <img
-      @eatYourself
-      @showYourself
-      *ngIf="!visible"
+    <img @eat *ngIf="!closeIcon"
       class="menu-close"
       src="assets/iconAll/close.png"
       alt=""
@@ -22,27 +16,4 @@
   </div>
 </header>
 
-<div id="menu">
-  <div @fadeIn *ngIf="!visible" id="links">
-    <a href="">About Me</a>
-    <a href="">My Skills</a>
-    <a href="">Portfolio</a>
-  </div>
 
-  <div @up *ngIf="!visible" class="footer">
-    <div class="space-between">
-      <div class="d-flex column">
-        <h1>Say Hi !</h1>
-        <div class="d-flex center copy">
-          <div class="email">muhammed@gmail.com</div>
-          <img src="assets/iconAll/svg.png" alt="" />
-        </div>
-      </div>
-      <div class="icons">
-        <img src="assets/iconAll/linkedin.png" alt="" />
-        <img src="assets/iconAll/github.png" alt="" />
-        <img src="assets/iconAll/email.png" alt="" />
-      </div>
-    </div>
-  </div>
-</div>

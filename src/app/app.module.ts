@@ -14,6 +14,7 @@ import { ContactComponent } from './contact/contact.component';
 import { EmailSendComponent } from './email-send/email-send.component';
 import { MainComponent } from './main/main.component';
 import { BrowserAnimationsModule }  from '@angular/platform-browser/animations';
+import { MenuComponent } from './menu/menu.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { BrowserAnimationsModule }  from '@angular/platform-browser/animations';
     PortfolioComponent,
     ContactComponent,
     EmailSendComponent,
-    MainComponent
+    MainComponent,
+    MenuComponent
   ],
   imports: [
     BrowserModule,

@@ -8,10 +8,10 @@ export class SharedService {
   private subject = new Subject<any>();
 
   sendClickEvent(){
-    this.subject.next(null);
-    
+    this.subject.next(0);
   }
-  getEvent():Observable<any>{
+
+  getClickEvent():Observable<any>{
     return this.subject.asObservable();
   }
 }

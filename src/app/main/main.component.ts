@@ -1,4 +1,4 @@
-import { Component, AfterViewInit } from '@angular/core';
+import { Component, AfterViewInit, OnInit } from '@angular/core';
 import { SharedService } from '../shared.service';
 import { Subscription } from 'rxjs';
 
@@ -7,31 +7,49 @@ import { Subscription } from 'rxjs';
   templateUrl: './main.component.html',
   styleUrls: ['./main.component.scss']
 })
-export class MainComponent implements AfterViewInit {
-  isVisible: boolean = true;
+export class MainComponent implements OnInit {
+  menu: boolean = false;
   clickEventSubscription: Subscription;
-  mainPage: HTMLElement; // Deklaration des HTML Element
+
 
   constructor(private sharedService: SharedService) {
-    this.clickEventSubscription = this.sharedService.getEvent().subscribe(() => {
-      this.mainPageToggle();
+    this.clickEventSubscription = this.sharedService.getClickEvent().subscribe(() => {
+      this.showMenu();
+      
     });
   }
 
-  ngAfterViewInit() {
-    // auf die klasse von HTML zugreifen
-    this.mainPage = document.querySelector(".main") as HTMLElement;
+  ngOnInit(): void {
+
   }
 
-  mainPageToggle() {
-    if (this.isVisible) {
-      this.mainPage.style.display = "none";
-      this.isVisible = false;
+
+  showMenu() {
+    if (this.menu) {
+      let main = document.getElementById('main') as HTMLDivElement;
+      let menu = document.getElementById('menu') as HTMLDivElement;
+      menu.style.display = "none"
+      main.style.display = "block";
+
+      this.toggle();
     } else {
-      this.mainPage.style.display = "block";
-      this.isVisible = true;
+      let main = document.getElementById('main') as HTMLDivElement;
+      let menu = document.getElementById('menu') as HTMLDivElement;
+      menu.style.display = "block"
+      main.style.display = "none";
+
+      this.toggle();
     }
+
   }
+
+  toggle() {
+    this.menu = !this.menu;
+  }
+
+
+
+
 }
 
 

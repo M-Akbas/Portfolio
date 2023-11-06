@@ -1,0 +1,11 @@
+#app-header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #FFFCF3;
+  z-index: 999;
+  box-shadow: none;
+  transition: box-shadow 0.3s ease;
+  width: 100vw;
+}
+

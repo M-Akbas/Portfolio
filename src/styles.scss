@@ -3,8 +3,12 @@ body {
     padding: 0;
     background-color: #FFFCF3;
     font-family: 'Syne', sans-serif;
+    scroll-behavior: smooth;
 }
-
+html{
+    scroll-behavior: smooth;
+    
+}
 .overall-margin{
     margin: 30px 10vw;
 }

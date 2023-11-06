@@ -3,6 +3,7 @@ header {
   align-items: center;
   justify-content: space-between;
   width: 77vw;
+  
 }
 
 .logo {
@@ -109,7 +110,7 @@ h1 {
     }
   }
 }
-img{
+img {
   cursor: pointer;
 }
 #links {
@@ -121,12 +122,18 @@ img{
   transition: 225ms ease-in-out;
 }
 
+
+
+
 @media (max-width: 1000px) {
   .space-between {
     margin: 0px 0vw;
   }
   h1 {
     font-size: 42px;
+  }
+  header{
+    width: 85vw;
   }
 }
 
@@ -180,7 +187,6 @@ img{
   img {
     height: 22px;
   }
-  
 }
 @media (max-height: 800px) {
   #menu {
@@ -191,19 +197,18 @@ img{
   }
 }
 @media (max-width: 470px) {
-  #links{
-
+  #links {
     a {
       font-size: 26px;
     }
   }
   #links {
-    gap: 50px ;
+    gap: 50px;
   }
   h1 {
     font-size: 28px;
   }
-  .copy{
+  .copy {
     display: none;
   }
   .space-between {
@@ -211,8 +216,5 @@ img{
     flex-direction: column;
     align-items: flex-start;
     margin-left: -30px;
-    
-
   }
 }
-

@@ -1,5 +1,5 @@
 .home-title {
-  margin-top: 180px;
+  margin-top: 250px;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -27,6 +27,12 @@
   }
   img {
     height: 3.5px;
+  }
+}
+
+@media (max-width: 1440px) {
+  .home-title{
+    margin-top: 190px;
   }
 }
 @media (max-width: 1250px) {

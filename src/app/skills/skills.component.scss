@@ -1,7 +1,7 @@
 .box {
   margin: 30px 10vw;
   border: 4px solid black;
-  padding: 140px 100px 100px 100px;
+  padding: 120px 80px 80px 80px;
 
   gap: 100px;
 }
@@ -54,6 +54,9 @@ margin-bottom: -100px;
     transform: translateY(-10px);
   }
 }
+
+
+
 
 @media (max-width:750px) {
   .box{

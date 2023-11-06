@@ -1,11 +1,34 @@
 <div id="main">
-    
-<app-home-title></app-home-title>
-<app-cta></app-cta>
-<app-about-me id="aboutMe"></app-about-me>
-<app-skills id="mySkills" ></app-skills>
-<app-portfolio id="portfolio"></app-portfolio>
-<app-contact></app-contact>
-
+  <app-home-title></app-home-title>
+  <app-cta></app-cta>
+  <app-about-me id="aboutMe"></app-about-me>
+  <app-skills id="mySkills"></app-skills>
+  <app-portfolio id="portfolio"></app-portfolio>
+  <app-contact></app-contact>
 </div>
-<app-menu id="menu"></app-menu>
+
+<div id="menu">
+  <div id="links">
+    <a (click)="closeMenu()" href="#aboutMe">About Me</a>
+    <a (click)="closeMenu()" href="#mySkills">My Skills</a>
+    <a (click)="closeMenu()" href="#portfolio">Portfolio</a>
+  </div>
+
+  <div class="footer">
+    <div class="space-between">
+      <div class="d-flex column">
+        <h1>Say Hi !</h1>
+        <div  (click)="showAction()" class="d-flex center copy">
+          <div class="email">muhammed@gmail.com</div>
+          <img src="assets/iconAll/svg.png" alt="" />
+        </div>
+        <p id="showAction">Email has been copied!</p>
+      </div>
+      <div class="icons">
+        <img src="assets/iconAll/linkedin.png" alt="" />
+        <img src="assets/iconAll/github.png" alt="" />
+        <img src="assets/iconAll/email.png" alt="" />
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,5 +1,5 @@
 .contact {
-  background-image: url("/assets/covers/footer.png");
+  background-image: url("^assets/covers/footer.png");
   width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -12,13 +12,16 @@
 .cta {
   z-index: 99;
   padding: 100px 10vw;
-  padding-bottom: 50px; 
+  padding-bottom: 50px;
 
   h1 {
     font-weight: 800;
     font-size: 50px;
     color: white;
   }
+}
+.btn {
+  color: white !important;
 }
 .alerty {
   color: rgba(214, 29, 29, 0.737) !important;
@@ -44,7 +47,7 @@
   justify-content: center;
   flex-direction: column;
   text-align: center;
-  
+
   h4 {
     margin-bottom: 5px;
     margin-top: 15px;
@@ -173,7 +176,6 @@ textarea {
     &:hover {
       padding: 20px 65px;
       color: white;
-      
     }
   }
 }
@@ -243,7 +245,6 @@ textarea {
     padding: 18px 35px !important;
   }
 }
-
 
 @media (max-width: 450px) {
   .child {

@@ -63,7 +63,7 @@ export class ContactComponent {
   setTimeout(()=>{
     notificationElement.style.opacity = "0";
     notificationElement.style.zIndex = "-10";
-  }, 2000);
+  }, 3500);
  }
 
   noString(){

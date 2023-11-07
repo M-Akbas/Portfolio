@@ -13,9 +13,20 @@ html{
     margin: 30px 10vw;
 }
 
+.overall-padding{
+    padding: 30px 10vw;
+}
+
+button{
+    color: black !important;
+}
+
 @media (max-width:1000px) {
     .overall-margin{
         margin: 30px 5vw;
+    }
+    .overall-padding{
+        padding: 30px 5vw;
     }
 }
 

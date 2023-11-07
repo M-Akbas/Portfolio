@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { style } from '@angular/animations';
 
 
 @Component({
@@ -10,22 +11,25 @@ import { Component, OnInit } from '@angular/core';
 export class PortfolioComponent implements OnInit {
   showContent: boolean[] = [false, false, false, false];
   mobile: boolean = false;
-  
+
 
   ngOnInit() {
     this.mobileView();
   }
 
   mobileView() {
-    if (window.innerWidth < 500) {
+    let img = document.getElementsByClassName[0](".img") as HTMLImageElement;
+    
+    if (window.innerWidth < 600) {
       this.mobile = true;
-      for (let i = 0; i < this.showContent.length +1; i++) {
+      img.style.filter = "grayscale(0%)"
+      for (let i = 0; i < this.showContent.length; i++) {
         this.showContent[i] = true;
       }
-      
+
     } else {
       this.mobile = true;
-      
+
     }
   }
 
@@ -42,10 +46,10 @@ export class PortfolioComponent implements OnInit {
     if (!this.mobile) {
       // do nothing
     } else {
-      if(window.innerWidth > 500){
+      if (window.innerWidth > 500) {
         this.showContent[index] = false;
       }
-      
+
     }
   }
 }

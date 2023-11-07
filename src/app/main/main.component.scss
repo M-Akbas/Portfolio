@@ -13,6 +13,7 @@
 
 html {
   scroll-behavior: smooth;
+  
 }
 #menu {
   flex-direction: column;
@@ -31,6 +32,13 @@ html {
       color: #5988ff;
     }
   }
+}
+#footer{
+  background-color: #0000 !important;
+  
+}
+#title{
+  scroll-margin-top: 200px;
 }
 #aboutMe{
   scroll-margin-top: 170px;
@@ -196,8 +204,20 @@ img {
   }
 }
 
+@media (max-width:500px) {
+  .space-between{
+    margin: -50px -5vw;
+  }
+  #menu {
+    a {
+      font-size: 30px;
+    }
+  }
+
+}
+
 @media (max-width: 400px) {
   #menu{
-    margin-top: 130px;
+    margin-top: 150px;
   }
 }

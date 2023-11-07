@@ -1,33 +1,40 @@
 <div id="main">
-  <app-home-title></app-home-title>
+  <app-home-title id="title"></app-home-title>
   <app-cta></app-cta>
   <app-about-me id="aboutMe"></app-about-me>
   <app-skills id="mySkills"></app-skills>
   <app-portfolio id="portfolio"></app-portfolio>
-  <app-contact></app-contact>
+  <app-contact id="contact"></app-contact>
+  <app-footer id="footer"></app-footer>
 </div>
 
 <div id="menu">
-  <div id="links">
-    <a (click)="closeMenu()" href="#aboutMe">About Me</a>
-    <a (click)="closeMenu()" href="#mySkills">My Skills</a>
-    <a (click)="closeMenu()" href="#portfolio">Portfolio</a>
+  <div *ngIf="menu" id="links">
+    <a @leftToRightSlow (click)="closeMenu()" href="#aboutMe">About Me</a>
+    <a @leftToRightMedium (click)="closeMenu()" href="#mySkills">My Skills</a>
+    <a @leftToRightFast (click)="closeMenu()" href="#portfolio">Portfolio</a>
   </div>
 
-  <div class="footer">
+  <div @downToUp *ngIf="menu" class="footer">
     <div class="space-between">
       <div class="d-flex column">
         <h1>Say Hi !</h1>
-        <div  (click)="showAction()" class="d-flex center copy">
-          <div class="email">muhammed@gmail.com</div>
-          <img src="assets/iconAll/svg.png" alt="" />
+        <div   class="d-flex center copy">
+          <div id="email" class="email">muhammed@gmail.com</div>
+          <img (click)="showAction()" src="assets/iconAll/svg.png" alt="" />
         </div>
         <p id="showAction">Email has been copied!</p>
       </div>
       <div class="icons">
-        <img src="assets/iconAll/linkedin.png" alt="" />
-        <img src="assets/iconAll/github.png" alt="" />
-        <img src="assets/iconAll/email.png" alt="" />
+        <a href="https://www.linkedin.com" target="_blank">
+          <img src="assets/iconAll/linkedin.png" alt="LinkedIn" />
+        </a>
+        <a href="https://github.com" target="_blank">
+          <img src="assets/iconAll/github.png" alt="GitHub" />
+        </a>
+        <a href="mailto:me@example.com" target="_blank">
+          <img src="assets/iconAll/email.png" alt="Email" />
+        </a>
       </div>
     </div>
   </div>

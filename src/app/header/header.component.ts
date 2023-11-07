@@ -33,14 +33,20 @@ import {
 export class HeaderComponent {
   closeIcon: boolean = true;
   menuIcon: boolean = true;
+  
   constructor(private sharedService: SharedService) { }
 
 
+  reload(){
+    location.reload();
+    
+  }
 
   menu() {
     this.sharedService.sendClickEvent();
     this.toggleIcons()
   }
+  
 
   toggleIcons() {
     this.closeIcon = !this.closeIcon;

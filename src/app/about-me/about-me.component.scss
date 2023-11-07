@@ -57,7 +57,23 @@ p {
   width: 60%;
   font-size: 22px;
 }
+.btn {
+  text-decoration: none;
+  color: black !important;
+  cursor: pointer;
+  font-family: Overpass;
+  border: 3px solid black;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  background-color: transparent;
+  padding: 20px 40px;
+  transition: padding 0.3s ease;
 
+  &:hover {
+    padding: 20px 60px;
+  }
+} 
 button {
   cursor: pointer;
   font-family: Overpass;
@@ -83,6 +99,7 @@ button {
 @media (max-width:1250px) {
   .content{
     flex-direction: column-reverse;
+    justify-content: flex-start;
   }
   .margin{
     margin-left: unset;
@@ -129,6 +146,9 @@ button {
   button{
     padding: 20px 30px;
     font-size: 16px;
+  }
+  .content{
+    margin-top: 150px;
   }
 }
 

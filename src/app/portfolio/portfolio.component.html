@@ -17,35 +17,65 @@
       <div class="abs"><img src="assets/img/rectA.png" alt="" /></div>
     </div>
     <div class="infos-left" [ngClass]="{ show: showContent[1] }">
-      <div class="counter">01/05</div>
+      <div class="counter reverse">01/04</div>
       <h2>Join</h2>
       <div class="languages">HTML | CSS | JS</div>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis</p>
+      <p>
+        Ein Projekt namens 'Join' wurde entwickelt, um ein
+        Kanban-Projektmanagement-Tool bereitzustellen. Mit 'Join' können Teams
+        Aufgaben verwalten, Arbeitsabläufe optimieren und Projekte effizient
+        organisieren.
+      </p>
       <div class="d-flexG">
-        <a href="https://www.google.com/webhp?hl=de&sa=X&ved=0ahUKEwjBtbjXuLCCAxVVxgIHHajmBQoQPAgJ" target="_blank" class="btn-p">Live</a>
-        <a href="https://www.google.com/webhp?hl=de&sa=X&ved=0ahUKEwjBtbjXuLCCAxVVxgIHHajmBQoQPAgJ" target="_blank" class="btn-p">GitHub</a>
+        <a
+          href="https://muhammed-akbas.com/NewJoin/"
+          target="_blank"
+          class="btn-p"
+          >Live</a
+        >
+        <a
+          href="https://github.com/deniseS85/Join"
+          target="_blank"
+          class="btn-p"
+          >GitHub</a
+        >
       </div>
     </div>
   </div>
 
   <div
-    *ngIf="mobile"
-    class="d-flex margin-T project-div reverse"
-    (mouseenter)="show(2)"
-    (mouseleave)="hide(2)"
+  *ngIf="mobile"
+  class="d-flex margin-T project-div reverse"
+  (mouseenter)="show(2)"
+  (mouseleave)="hide(2)"
   >
     <div class="img-div">
       <img id="img" class="img" src="assets/covers/Pokedex.png" alt="" />
       <div class="abs-reverse"><img src="assets/img/rectA.png" alt="" /></div>
     </div>
     <div class="infos-right" [ngClass]="{ 'show-right': showContent[2] }">
-      <div class="counter reverse">02/05</div>
+      <div class="counter reverse">02/04</div>
       <h2>Pokédex</h2>
       <div class="languages">HTML | CSS | JS</div>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis</p>
+      <p>
+        Ein Pokedex wurde mithilfe von HTML, CSS und JavaScript entwickelt, um
+        Nutzern die Anzeige und interaktive Erkundung von Pokémon-Informationen
+        zu ermöglichen. Das Projekt bietet eine professionelle
+        Benutzeroberfläche mit einer breiten Palette an Funktionalitäten.
+      </p>
       <div class="d-flexG">
-        <a href="https://www.google.com/webhp?hl=de&sa=X&ved=0ahUKEwjBtbjXuLCCAxVVxgIHHajmBQoQPAgJ" target="_blank" class="btn-p">Live</a>
-        <a href="https://www.google.com/webhp?hl=de&sa=X&ved=0ahUKEwjBtbjXuLCCAxVVxgIHHajmBQoQPAgJ" target="_blank" class="btn-p">GitHub</a>
+        <a
+          href="https://muhammed-akbas.com/pokedex/"
+          target="_blank"
+          class="btn-p"
+          >Live</a
+        >
+        <a
+          href="https://github.com/M-Akbas/Pokedex"
+          target="_blank"
+          class="btn-p"
+          >GitHub</a
+        >
       </div>
     </div>
   </div>
@@ -61,13 +91,28 @@
       <div class="abs"><img src="assets/img/rectA.png" alt="" /></div>
     </div>
     <div class="infos-left" [ngClass]="{ show: showContent[3] }">
-      <div class="counter">03/05</div>
+      <div class="counter reverse">03/04</div>
       <h2>Simple CRM</h2>
       <div class="languages">HTML | CSS | JS</div>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis</p>
+      <p>
+        Das Projekt 'Simple CRM' bietet ein einfaches CRM-System zur effektiven
+        Kundenverwaltung. Es ermöglicht Unternehmen, Kundenkontakte zu
+        speichern, Interaktionen zu verfolgen und die Kundenbeziehungen zu
+        pflegen.
+      </p>
       <div class="d-flexG">
-        <a href="https://www.google.com/webhp?hl=de&sa=X&ved=0ahUKEwjBtbjXuLCCAxVVxgIHHajmBQoQPAgJ" target="_blank" class="btn-p">Live</a>
-        <a href="https://www.google.com/webhp?hl=de&sa=X&ved=0ahUKEwjBtbjXuLCCAxVVxgIHHajmBQoQPAgJ" target="_blank" class="btn-p">GitHub</a>
+        <a
+          href="https://www.google.com/webhp?hl=de&sa=X&ved=0ahUKEwjBtbjXuLCCAxVVxgIHHajmBQoQPAgJ"
+          target="_blank"
+          class="btn-p"
+          >Live</a
+        >
+        <a
+          href="https://www.google.com/webhp?hl=de&sa=X&ved=0ahUKEwjBtbjXuLCCAxVVxgIHHajmBQoQPAgJ"
+          target="_blank"
+          class="btn-p"
+          >GitHub</a
+        >
       </div>
     </div>
   </div>
@@ -80,16 +125,30 @@
   >
     <div class="img-div">
       <img id="img" class="img" src="assets/covers/samurai.png" alt="" />
-      <div class="abs-reverse"><img src="assets/img/rectA.png" alt="" /></div>
+      <div *ngIf="mobile" class="abs-reverse"><img src="assets/img/rectA.png" alt="" /></div>
     </div>
     <div class="infos-right" [ngClass]="{ 'show-right': showContent[4] }">
-      <div class="counter reverse">04/05</div>
+      <div class="counter reverse">04/04</div>
       <h2>Takeshi Ishiro</h2>
       <div class="languages">HTML | CSS | JS</div>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis</p>
+      <p>
+        "Takeshi Ishiro - The Last Samurai" ist ein objektorientiertes Projekt,
+        bei dem Sie in die Rolle des Samurai Takeshi Ishiro schlüpfen und sein
+        Abenteuer in einer Samurai-Welt erleben können.
+      </p>
       <div class="d-flexG">
-        <a href="https://www.google.com/webhp?hl=de&sa=X&ved=0ahUKEwjBtbjXuLCCAxVVxgIHHajmBQoQPAgJ" target="_blank" class="btn-p">Live</a>
-        <a href="https://www.google.com/webhp?hl=de&sa=X&ved=0ahUKEwjBtbjXuLCCAxVVxgIHHajmBQoQPAgJ" target="_blank" class="btn-p">GitHub</a>
+        <a
+          href="https://muhammed-akbas.com/game/"
+          target="_blank"
+          class="btn-p"
+          >Live</a
+        >
+        <a
+          href="https://github.com/M-Akbas/SamuraiGame"
+          target="_blank"
+          class="btn-p"
+          >GitHub</a
+        >
       </div>
     </div>
   </div>

@@ -1,37 +1,53 @@
 body {
-    margin: 0;
-    padding: 0;
-    background-color: #FFFCF3;
-    font-family: 'Syne', sans-serif;
-    scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  background-color: #fffcf3;
+  font-family: "Syne", sans-serif;
+  scroll-behavior: smooth;
 }
-html{
-    scroll-behavior: smooth;
-    
+html {
+  scroll-behavior: smooth;
 }
-.overall-margin{
-    margin: 30px 10vw;
-}
-
-.overall-padding{
-    padding: 30px 10vw;
+.overall-margin {
+  margin: 30px 10vw;
 }
 
-button{
-    color: black !important;
+.overall-padding {
+  padding: 30px 10vw;
 }
 
-@media (max-width:1000px) {
-    .overall-margin{
-        margin: 30px 5vw;
-    }
-    .overall-padding{
-        padding: 30px 5vw;
-    }
+button {
+  color: black !important;
 }
 
-h1{
-    &:hover{
-        color:#5988FF !important;
-    }
+@media (max-width: 1000px) {
+  .overall-margin {
+    margin: 30px 5vw;
+  }
+  .overall-padding {
+    padding: 30px 5vw;
+  }
 }
+
+h1 {
+  &:hover {
+    color: #5988ff !important;
+  }
+}
+html::-webkit-scrollbar-track
+{
+	border: 1px solid black;
+	background-color: #F5F5F5;
+}
+
+html::-webkit-scrollbar
+{
+	width: 10px;
+	background-color: #F5F5F5;
+}
+
+html::-webkit-scrollbar-thumb
+{
+	background-color: #000000;	
+}
+

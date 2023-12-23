@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, AfterViewInit } from '@angular/core';
 import { style } from '@angular/animations';
 
 
@@ -8,30 +8,38 @@ import { style } from '@angular/animations';
   styleUrls: ['./portfolio.component.scss'],
 
 })
-export class PortfolioComponent implements OnInit {
+export class PortfolioComponent implements AfterViewInit {
   showContent: boolean[] = [false, false, false, false];
   mobile: boolean = false;
 
 
-  ngOnInit() {
-    this.mobileView();
+  ngAfterViewInit() {
+    setInterval(() => {
+      this.mobileView();
+      
+    }, 1000)
   }
 
   mobileView() {
-    let img = document.getElementsByClassName[0](".img") as HTMLImageElement;
-    
     if (window.innerWidth < 600) {
       this.mobile = true;
-      img.style.filter = "grayscale(0%)"
+      let imgs = document.getElementsByClassName("img") as HTMLCollection;
+      for (let i = 0; i < imgs.length; i++) {
+        const img = imgs[i] as HTMLImageElement;
+        img.style.filter = "grayscale(0%)"; // Hier wird 'img' statt 'imgs' verwendet
+      }
       for (let i = 0; i < this.showContent.length; i++) {
         this.showContent[i] = true;
+        console.log(this.showContent);
       }
-
     } else {
-      this.mobile = true;
-
+      this.mobile = true; // Änderung hier
     }
   }
+  
+
+ 
+  
 
   show(index: number) {
     if (!this.mobile) {

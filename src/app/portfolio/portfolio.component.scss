@@ -8,6 +8,9 @@
     font-size: 22px;
   }
 }
+p{
+  width: 70%;
+}
 .btn-p {
   text-decoration: none;
   color: black !important;
@@ -181,7 +184,7 @@ button {
 .show {
   transition: all 425ms ease-in-out;
   position: relative;
-  left: 150px;
+  left: 135px;
   opacity: 1;
   z-index: 2;
 }
@@ -189,7 +192,7 @@ button {
 .show-right {
   transition: all 425ms ease-in-out;
   position: relative;
-  right: 300px;
+  right: 0px;
   opacity: 1;
   z-index: 2;
 }
@@ -215,33 +218,28 @@ button {
 }
 
 @media (max-width: 1650px) {
-  .show {
-    left: 200px;
-  }
-  .show-right {
-    
-    right: 200px;
-    
-  }
+  
   
 
 }
 @media (max-width: 1550px) {
-  .d-flex{
+  .project-div{
   display: flex;
   gap: 40px;
-  align-items: center !important;
   flex-direction: column;
-  justify-content: center;
+  align-items: flex-start;
+  
+  
   }
   .infos-left{
     position: unset;
-    margin-right: 100px;
+   
   }
 
+  
   .infos-right{
     position: unset;
-    margin-right: 100px;
+    
   }
   .show {
    left: 0;
@@ -264,11 +262,7 @@ button {
 
 
 @media (max-width: 1250px) {
-  .d-flex {
-    flex-direction: column;
-    align-items: center;
-   
-  }
+  
   
  
   
@@ -291,21 +285,26 @@ button {
   }
   .title div {
     font-size: 18px;
+    align-items: flex-start;
   }
 }
 
-@media (max-width:525px) {
+@media (max-width:620px) {
   img {
-    height: 250px;
+    height: 300px;
   }
-  .infos-left{
-    margin-left: 80px;
-  }
-  .infos-right{
-    margin-left: 80px;
-  }
+
   .arrow img{
     height: 120px !important;
+  }
+  .btn-p {
+    &:hover{
+      padding: 20px 40px;
+    }
+  }
+
+  p{
+    width: 80%;
   }
 }
 
@@ -320,12 +319,7 @@ button {
   .title div {
     font-size: 16px;
   }
-  .infos-left{
-    margin-left: 80px;
-  }
-  .infos-right{
-    margin-left: 80px;
-  }
+  
   .arrow img{
     height: 120px !important;
   }

@@ -55,7 +55,11 @@ margin-bottom: -100px;
   }
 }
 
-
+@media (max-width:1000px) {
+  .box{
+    margin: 30px 5vw;
+  }
+}
 
 
 @media (max-width:750px) {

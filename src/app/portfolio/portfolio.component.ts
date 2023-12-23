@@ -1,5 +1,5 @@
 import { Component, OnInit, AfterViewInit } from '@angular/core';
-import { style } from '@angular/animations';
+
 
 
 @Component({
@@ -60,6 +60,9 @@ export class PortfolioComponent implements AfterViewInit {
 
     }
   }
+
+
+  
 }
 
 

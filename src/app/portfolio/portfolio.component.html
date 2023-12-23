@@ -6,18 +6,13 @@
 </div>
 
 <div class="overall-margin">
-  <div
-    *ngIf="mobile"
-    class="d-flex margin-T project-div"
-    (mouseenter)="show(1)"
-    (mouseleave)="hide(1)"
-  >
+  <div *ngIf="mobile" class="d-flex margin-T project-div" (mouseenter)="show(1)" (mouseleave)="hide(1)">
     <div class="img-div">
       <img class="img" src="assets/covers/join.png" alt="" />
       <div class="abs"><img src="assets/img/rectA.png" alt="" /></div>
     </div>
     <div class="infos-left" [ngClass]="{ show: showContent[1] }">
-      <div class="counter reverse">01/04</div>
+      <div class="counter reverse">01/03</div>
       <h2>Join</h2>
       <div class="languages">HTML | CSS | JS</div>
       <p>
@@ -27,130 +22,75 @@
         organisieren.
       </p>
       <div class="d-flexG">
-        <a
-          href="https://muhammed-akbas.com/NewJoin/"
-          target="_blank"
-          class="btn-p"
-          >Live</a
-        >
-        <a
-          href="https://github.com/deniseS85/Join"
-          target="_blank"
-          class="btn-p"
-          >GitHub</a
-        >
+        <a href="https://muhammed-akbas.com/NewJoin/" target="_blank" class="btn-p">Live</a>
+        <a href="https://github.com/deniseS85/Join" target="_blank" class="btn-p">GitHub</a>
       </div>
     </div>
   </div>
 
-  <div
-  *ngIf="mobile"
-  class="d-flex margin-T project-div reverse"
-  (mouseenter)="show(2)"
-  (mouseleave)="hide(2)"
-  >
+  <div *ngIf="mobile" class="d-flex margin-T project-div reverse" (mouseenter)="show(2)" (mouseleave)="hide(2)">
     <div class="img-div">
-      <img id="img" class="img" src="assets/covers/Pokedex.png" alt="" />
+      <img id="img" class="img" src="assets/covers/daBubbleCover.png" alt="" />
       <div class="abs-reverse"><img src="assets/img/rectA.png" alt="" /></div>
     </div>
     <div class="infos-right" [ngClass]="{ 'show-right': showContent[2] }">
-      <div class="counter reverse">02/04</div>
-      <h2>Pokédex</h2>
-      <div class="languages">HTML | CSS | JS</div>
+      <div class="counter reverse">02/03</div>
+      <h2>DABubble</h2>
+      <div class="languages">ANGULAR | SCSS | TS | FIREBASE</div>
       <p>
-        Ein Pokedex wurde mithilfe von HTML, CSS und JavaScript entwickelt, um
-        Nutzern die Anzeige und interaktive Erkundung von Pokémon-Informationen
-        zu ermöglichen. Das Projekt bietet eine professionelle
-        Benutzeroberfläche mit einer breiten Palette an Funktionalitäten.
+        A user-friendly Slack clone app enabling easy team communication and collaboration through organized chats and
+        channels.
       </p>
-      <div class="d-flexG">
-        <a
-          href="https://muhammed-akbas.com/pokedex/"
-          target="_blank"
-          class="btn-p"
-          >Live</a
-        >
-        <a
-          href="https://github.com/M-Akbas/Pokedex"
-          target="_blank"
-          class="btn-p"
-          >GitHub</a
-        >
+      <div class="d-flexG removeLater">
+        <div class="tooltip-removeLater" >IN PRODUCTION!</div>
+        <a href="https://muhammed-akbas.com/pokedex/" target="_blank" class="btn-p removenLater">Live</a>
+        <a href="https://github.com/M-Akbas/DaBubble" target="_blank" class="btn-p">GitHub</a>
       </div>
     </div>
   </div>
 
-  <div
-    *ngIf="mobile"
-    class="d-flex margin-T project-div"
-    (mouseenter)="show(3)"
-    (mouseleave)="hide(3)"
-  >
+  <div *ngIf="mobile" class="d-flex margin-T project-div" (mouseenter)="show(3)" (mouseleave)="hide(3)">
     <div class="img-div">
-      <img id="img" class="img" src="assets/covers/crm.png" alt="" />
+      <img id="img" class="img" src="assets/covers/samurai.png" alt="" />
       <div class="abs"><img src="assets/img/rectA.png" alt="" /></div>
     </div>
     <div class="infos-left" [ngClass]="{ show: showContent[3] }">
-      <div class="counter reverse">03/04</div>
-      <h2>Simple CRM</h2>
+      <div class="counter reverse">03/03</div>
+      <h2>Takeshi Ishiro</h2>
       <div class="languages">HTML | CSS | JS</div>
       <p>
-        Das Projekt 'Simple CRM' bietet ein einfaches CRM-System zur effektiven
-        Kundenverwaltung. Es ermöglicht Unternehmen, Kundenkontakte zu
-        speichern, Interaktionen zu verfolgen und die Kundenbeziehungen zu
-        pflegen.
+        "Takeshi Ishiro - The Last Samurai" is an object-oriented project,
+        in which you slip into the role of the samurai Takeshi Ishiro and be
+        Experience adventures in a samurai world.
       </p>
       <div class="d-flexG">
-        <a
-          href="https://www.google.com/webhp?hl=de&sa=X&ved=0ahUKEwjBtbjXuLCCAxVVxgIHHajmBQoQPAgJ"
-          target="_blank"
-          class="btn-p"
-          >Live</a
-        >
-        <a
-          href="https://www.google.com/webhp?hl=de&sa=X&ved=0ahUKEwjBtbjXuLCCAxVVxgIHHajmBQoQPAgJ"
-          target="_blank"
-          class="btn-p"
-          >GitHub</a
-        >
+        <a href="https://muhammed-akbas.com/game/" target="_blank"
+          class="btn-p">Live</a>
+        <a href="https://github.com/M-Akbas/SamuraiGame" target="_blank"
+          class="btn-p">GitHub</a>
       </div>
     </div>
   </div>
 
-  <div
-    *ngIf="mobile"
-    class="d-flex margin-T project-div reverse"
-    (mouseenter)="show(4)"
-    (mouseleave)="hide(4)"
-  >
+  <!-- <div *ngIf="mobile" class="d-flex margin-T project-div reverse" (mouseenter)="show(4)" (mouseleave)="hide(4)">
     <div class="img-div">
       <img id="img" class="img" src="assets/covers/samurai.png" alt="" />
-      <div *ngIf="mobile" class="abs-reverse"><img src="assets/img/rectA.png" alt="" /></div>
+      <div class="abs-reverse"><img src="assets/img/rectA.png" alt="" /></div>
     </div>
     <div class="infos-right" [ngClass]="{ 'show-right': showContent[4] }">
       <div class="counter reverse">04/04</div>
       <h2>Takeshi Ishiro</h2>
       <div class="languages">HTML | CSS | JS</div>
       <p>
-        "Takeshi Ishiro - The Last Samurai" ist ein objektorientiertes Projekt,
-        bei dem Sie in die Rolle des Samurai Takeshi Ishiro schlüpfen und sein
-        Abenteuer in einer Samurai-Welt erleben können.
+        "Takeshi Ishiro - The Last Samurai" is an object-oriented project,
+        in which you slip into the role of the samurai Takeshi Ishiro and be
+        Experience adventures in a samurai world.
       </p>
       <div class="d-flexG">
-        <a
-          href="https://muhammed-akbas.com/game/"
-          target="_blank"
-          class="btn-p"
-          >Live</a
-        >
-        <a
-          href="https://github.com/M-Akbas/SamuraiGame"
-          target="_blank"
-          class="btn-p"
-          >GitHub</a
-        >
+        <a href="https://muhammed-akbas.com/game/" target="_blank" class="btn-p">Live</a>
+        <a href="https://github.com/M-Akbas/SamuraiGame" target="_blank" class="btn-p">GitHub</a>
       </div>
     </div>
-  </div>
+  </div> -->
 </div>
 <div class="arrow"><img src="assets/icons/arrowLeft.png" alt="" /></div>

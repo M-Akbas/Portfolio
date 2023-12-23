@@ -334,3 +334,27 @@ button {
     font-size: 16px;
   }
 }
+
+
+
+
+
+
+// remove later 
+
+.tooltip-removeLater{
+  position: absolute;
+  left: 0px;
+  top: 80px;
+  font-size: 14px;
+}
+.removenLater{
+  cursor: no-drop !important;
+  pointer-events: none;
+
+}
+.removeLater{
+  position: relative;
+  
+}
+

@@ -223,6 +223,17 @@ button {
 
 }
 @media (max-width: 1550px) {
+  .project-div .abs-reverse {
+    position: absolute; /* Oder "fixed", je nach Bedarf */
+    top: 0; /* Startposition oben */
+    left: 0; /* Startposition links */
+    transition: all 225ms ease-in-out; /* Animationsdauer und Easing-Funktion */
+  }
+  .project-div:hover .abs-reverse {
+    top: 25px; /* Endposition unten */
+    left: 25px; /* Endposition rechts */
+  }
+
   .project-div{
   display: flex;
   gap: 40px;
@@ -308,6 +319,35 @@ button {
   }
 }
 
+@media (max-width:515px) {
+  img {
+    height: 250px;
+  }
+
+  .arrow img{
+    height: 120px !important;
+  }
+  .btn-p {
+    &:hover{
+      padding: 20px 40px;
+    }
+  }
+
+  p{
+    width: 80%;
+  }
+
+  .project-div:hover .abs {
+    top: 0px; /* Endposition unten */
+    left: 0px; /* Endposition rechts */
+  }
+
+  .project-div:hover .abs-reverse {
+    top: 0px; /* Endposition unten */
+    right: 0px
+  }
+}
+
 @media (max-width:450px) {
   
   h1{
@@ -340,7 +380,7 @@ button {
 
 
 
-// remove later 
+// ! remove later -----------
 
 .tooltip-removeLater{
   position: absolute;
@@ -357,4 +397,4 @@ button {
   position: relative;
   
 }
-
+// !---------------

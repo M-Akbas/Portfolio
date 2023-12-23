@@ -22,10 +22,10 @@ export class SkillsComponent implements OnInit {
   isHovered = false;
 
   ngOnInit() {
-    setInterval(()=>{
+    setInterval(() => {
       this.isMobile()
-    }, 1000);
-    
+    }, 3000);
+
   }
 
   isMobile() {
@@ -44,10 +44,15 @@ export class SkillsComponent implements OnInit {
     }
   }
   hover(itemNumber: number) {
-    const hoveredItem = this.icons.find(item => item.number === itemNumber); // object 
-    if (hoveredItem) {
+    const hoveredItem = this.icons.find(item => item.number === itemNumber)
+    if (window.innerWidth < 600) {
+      hoveredItem.isHovered = false;
+
+    } else {
       hoveredItem.isHovered = true;
     }
+
+
 
   }
   unhover(itemNumber: number) {

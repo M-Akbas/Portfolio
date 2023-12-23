@@ -5,10 +5,12 @@
   background-repeat: no-repeat;
   padding-bottom: 100px;
 }
+
 .alert {
   color: rgba(214, 29, 29, 0.737) !important;
   font-size: 15px !important;
 }
+
 .cta {
   z-index: 99;
   padding: 100px 10vw;
@@ -20,13 +22,16 @@
     color: white;
   }
 }
+
 .btn {
   color: white !important;
 }
+
 .alerty {
   color: rgba(214, 29, 29, 0.737) !important;
   font-size: 15px !important;
 }
+
 .pos-rel {
   position: relative;
 }
@@ -54,18 +59,24 @@
     font-size: 22px;
     width: 200px;
   }
+
   p {
     font-size: 16px;
   }
 }
+
 .parent {
   position: relative;
 }
+
 .child {
   position: absolute !important;
-  left: 0px;
-  top: 67px;
+  top: 170%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
 }
+
 h2 {
   font-size: 38px;
   color: #5988ff;
@@ -91,6 +102,7 @@ h2 {
   align-items: flex-start;
   gap: 30px;
 }
+
 textarea {
   height: 100px;
   min-width: 640px;
@@ -100,7 +112,8 @@ textarea {
   border-top: 3px solid transparent;
   border-bottom: 3px solid white;
   background: transparent;
-  transition: border 0.3s ease; /* Fügt eine glatte Animation hinzu */
+  transition: border 0.3s ease;
+  /* Fügt eine glatte Animation hinzu */
   padding: 5px;
   color: white;
 
@@ -108,6 +121,7 @@ textarea {
     border: 3px solid white;
   }
 }
+
 .input-fields input {
   height: 40px;
   width: 640px;
@@ -116,7 +130,8 @@ textarea {
   border-top: 3px solid transparent;
   border-bottom: 3px solid white;
   background: transparent;
-  transition: border 0.3s ease; /* Fügt eine glatte Animation hinzu */
+  transition: border 0.3s ease;
+  /* Fügt eine glatte Animation hinzu */
   padding: 5px;
   color: white;
   position: relative;
@@ -125,6 +140,7 @@ textarea {
 .msg {
   position: relative;
   height: 100px !important;
+
   input {
     position: absolute;
     top: 10px;
@@ -132,7 +148,8 @@ textarea {
 }
 
 .input-fields input:hover {
-  border: 3px solid white; /* Ändert den Rahmen bei Hover */
+  border: 3px solid white;
+  /* Ändert den Rahmen bei Hover */
 }
 
 .d-flex {
@@ -141,10 +158,12 @@ textarea {
 
   gap: 5px;
 }
+
 .check-box {
   width: 20px;
   height: 20px;
 }
+
 .privacy {
   margin-top: 30px;
 
@@ -158,6 +177,7 @@ textarea {
   text-decoration: none;
   color: #5988ff !important;
 }
+
 .btn-div {
   margin-top: 70px;
 
@@ -190,22 +210,28 @@ textarea {
   .cta h1 {
     font-size: 38px;
   }
+
   .fill-info h2 {
     font-size: 28px;
   }
+
   .fill-info div {
     font-size: 18px;
   }
+
   .input-fields input {
     width: 420px;
   }
+
   textarea {
     min-width: 420px;
     max-width: 420px;
   }
+
   .privacy div {
     font-size: 12px;
   }
+
   .privacy a {
     font-size: 12px;
   }
@@ -215,25 +241,32 @@ textarea {
   .cta h1 {
     font-size: 32px;
   }
+
   .fill-info h2 {
     font-size: 22px;
   }
+
   .fill-info div {
     font-size: 14px;
   }
+
   .input-fields input {
     width: 300px;
   }
+
   textarea {
     min-width: 300px;
     max-width: 300px;
   }
+
   .privacy div {
     font-size: 12px;
   }
+
   .privacy a {
     font-size: 12px;
   }
+
   .d-flex {
     flex-wrap: wrap;
     margin-left: 20vw;
@@ -249,7 +282,8 @@ textarea {
 @media (max-width: 450px) {
   .child {
     position: absolute !important;
-    left: 39px !important;
-    top: 107px;
+    top: 150%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 }

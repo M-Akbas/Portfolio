@@ -30,7 +30,6 @@ export class PortfolioComponent implements AfterViewInit {
       }
       for (let i = 0; i < this.showContent.length; i++) {
         this.showContent[i] = true;
-        console.log(this.showContent);
       }
     } else {
       this.mobile = true; // Änderung hier

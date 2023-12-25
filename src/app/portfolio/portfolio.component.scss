@@ -344,7 +344,9 @@ button {
 
   .project-div:hover .abs-reverse {
     top: 0px; /* Endposition unten */
-    right: 0px
+    right: 0px;
+    left: 0px;
+    cursor: pointer;
   }
 }
 

@@ -7,10 +7,10 @@
 }
 
 .alert {
-  color: rgba(214, 29, 29, 0.737) !important;
+  color: rgb(255, 0, 0) !important;
   font-size: 15px !important;
+  transition: all 22ms ease-in-out !important;
 }
-
 .cta {
   z-index: 99;
   padding: 100px 10vw;
